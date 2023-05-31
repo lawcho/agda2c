@@ -1,0 +1,7 @@
+_build/
+agda2c.dyn_hi
+agda2c.dyn_o
+agda2c.hi
+agda2c.o
+agda2c
+.gdb_history

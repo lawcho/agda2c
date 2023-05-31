@@ -1,0 +1,2 @@
+include: agda-src/
+flags: --postfix-projections
