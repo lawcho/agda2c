@@ -19,10 +19,7 @@ void put_u16(uint16_t x){
 
 put-u16-sig = sig void "put_u16" (uint16 ∷ [])
 
-open import Agda.Builtin.String
-open import Agda.Builtin.Char
-
--- Hand-unpacked strings to work aroudn unimplemented Strings in backend (18 May '23)
+-- Hand-unpacked strings to work around unimplemented Strings in backend (18 May '23)
 apa = 65 ∷ 112 ∷ 97 ∷ 10 ∷ []
 hund = 72 ∷ 117 ∷ 110 ∷ 100 ∷ 10 ∷ []
 
