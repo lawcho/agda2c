@@ -152,7 +152,7 @@ uint16_t marshall_a2c_uint16_t(Term* t)
               , op0(|]<> raw2cname "Foreign-C.Core.Ret-Type.uint16" <>[RSQ.r|))
         , t)
     ));}
-bool marshall_a2c_bool(Term* t) 
+bool marshall_a2c_bool(Term* t)
   {return (bool) (from_prim_whnf(
     app ( app ( op0(|]<> raw2cname "Foreign-C.Core.to-Nat" <>[RSQ.r|)
               , op0(|]<> raw2cname "Foreign-C.Core.Ret-Type.bool" <>[RSQ.r|))

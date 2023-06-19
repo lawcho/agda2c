@@ -1,5 +1,5 @@
 
--- More advanced example, using several helpers 
+-- More advanced example, using several helpers
 module Examples.FFI.Apa-Hund where
 
 open import Agda.Builtin.List

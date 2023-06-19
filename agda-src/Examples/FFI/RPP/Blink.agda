@@ -10,7 +10,7 @@ delay = 500
 open import Foreign-C.Sugared
 
 c-import = "
-#include\"pico/stdlib.h\"
+#include<pico/stdlib.h>
 "
 {-# COMPILE RAW_C c-import #-}
 

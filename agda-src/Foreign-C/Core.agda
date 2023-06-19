@@ -138,7 +138,7 @@ record Cmd : Set where
 -- What is the return type of each command?
 cmd-ret-ty : Cmd → Set
 cmd-ret-ty (cmd 0 (cmd-ccall s _)) = ⟦ ret-ty s ⟧r
-cmd-ret-ty (cmd (suc _) (cmd-return _ )) = ⊥  
+cmd-ret-ty (cmd (suc _) (cmd-return _ )) = ⊥
 
 -- Coinductive Command Stream.
 -- aka "Interaction Tree", "Coinductive Free Monad"

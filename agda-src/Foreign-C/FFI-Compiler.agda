@@ -189,7 +189,7 @@ compile-fun agda-ident compiled-agda-ident exposed = "
               wrapped = case s .ret-ty of λ where
                   void → "("++ call ++",
               marshall_c2a_void());"
-                  t → "marshall_c2a("++ call ++");"
+                  t → "marshall_c2a_"++ print-Ret-Ty t ++"("++ call ++");"
             in wrapped
             ) ++ "
 

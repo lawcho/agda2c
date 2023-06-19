@@ -7,6 +7,7 @@ open import Agda.Builtin.Sigma
 open import Agda.Builtin.Unit
 
 open import Foreign-C.Core
+open import Foreign-C.FFI-Compiler
 open Exposed
 open CCS
 open Cmd
