@@ -143,6 +143,10 @@ Term* prim_PEqI_op2(Term** i1, Term** i2)
         {return op0(|]<> raw2cname "Agda.Builtin.Bool.Bool.false" <>[RSQ.r|);}}
 Term* prim_PEqI_op0(void)
     {return λ(i1, λ(i2, op2(prim_PEqI_op2,var(i1),var(i2))));}
+Term* prim_PSeq_op2(Term** t1, Term** t2)
+    {whnf(*t1); return *t2;}
+Term* prim_PSeq_op0(void)
+    {return λ(t1, λ(t2, op2(prim_PSeq_op2,var(t1),var(t2))));}
 // End shim definitions for treeless primitives
 // Begin marshalling function definitions
 // Agda -> C

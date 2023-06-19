@@ -6,7 +6,7 @@ open import Agda.Builtin.List
 open import Agda.Builtin.Sigma
 open import Agda.Builtin.Unit
 
-open import Examples.FFI.FIO-Lib
+open import Examples.Lib.FIO
 
 c-import = "
 #include<stdio.h>

@@ -1,6 +1,6 @@
 
 -- Library of monad-style helpers
-module Examples.FFI.FIO-Lib where
+module Examples.Lib.FIO where
 
 open import Agda.Builtin.List
 open import Agda.Builtin.Sigma
