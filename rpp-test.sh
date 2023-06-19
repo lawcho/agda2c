@@ -1,11 +1,13 @@
 #! /usr/bin/env bash
 
-AGDA_MAIN=agda-src/Examples/FFI/RPP/Blink.agda
+AGDA_MAIN=fptalk/Demo.agda
 PICO_SDK_LIBS="pico_stdlib"
 
 set -e
 
 mkdir -p _build/
+
+./agda2c.hs ${AGDA_MAIN} 2>_build/main.c
 
 cat <<EOF >_build/CMakeLists.txt
 
@@ -115,10 +117,10 @@ EOF
 
 cp bubs/src/bubs.{c,h} _build/
 
-./agda2c.hs ${AGDA_MAIN} 2>_build/main.c
-
 cd _build
 
 cmake .
 
 make
+
+cp main.hex ~

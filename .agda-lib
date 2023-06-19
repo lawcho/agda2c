@@ -1,2 +1,2 @@
-include: agda-src/
-flags: --postfix-projections
+include: agda-src/ fptalk/
+flags: --postfix-projections --guardedness
